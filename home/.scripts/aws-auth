@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Login
+aws sso login --profile $1
+
+# Export envs
+aws configure export-credentials --profile $1 --format env | while read line ; do
+   eval $line
+done

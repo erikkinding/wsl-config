@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # GO
 export GOROOT=/usr/local/go
 export PATH=$GOROOT/bin:$PATH
-export GOPRIVATE=bitbucket.org/inaccess*
+export GOPRIVATE=""
 
 # Python
 export PATH="$HOME/.local/bin:$PATH"

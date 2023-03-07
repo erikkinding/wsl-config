@@ -1,0 +1,11 @@
+[url "ssh://git@bitbucket.org/"]
+	insteadOf = https://bitbucket.org/
+
+[rebase]
+	autoStash = true
+
+[alias]
+	pushu = !git push --set-upstream origin $(git symbolic-ref --short HEAD)
+	cc = rev-list origin..HEAD^ --count
+	ll = log --oneline
+	ag = add '*.go'
